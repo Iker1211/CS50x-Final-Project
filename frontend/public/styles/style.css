@@ -21,7 +21,7 @@ body {
 #sidebar {
     width: 300px;
     height: 100%;
-    background-color: blue;
+    background-color: #5A387B;
     flex: none;
 }
 
@@ -34,10 +34,11 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    z-index: 99999999999999999;
 }
 
 .cabecera {
-    background-color: green;
+    background-color: #1A2A3B;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,16 +52,17 @@ body {
 }
 
 .contenido {
-    background-color: yellow;
+    background-color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 70%;
     flex: none;
+    flex-wrap: wrap;
 }
 
 .footer {
-    background-color: brown;
+    background-color: #1A2A3B;
     display: flex;
     justify-content: center;
     height: 10%;
@@ -70,7 +72,7 @@ body {
 
 .card {
 width: 65%;
-z-index: 99999;
+background-color: white;
 }
 
 #blog-post-form {
@@ -82,12 +84,11 @@ width: 100%;
   background-color: #fff;
   width: 100%;
   border-radius: 4px;
-  box-shadow: #00000059 0px 5px 15px;
 }
 
 textarea
 {
-    width: 100%;
+    width: 95%;
     height: 200px;
     padding: 10px;
     border-radius: 3px;
@@ -95,3 +96,22 @@ textarea
     border: none;
     resize: none;
 }
+
+/* Prueba */
+@media (max-width: 1050px) {
+    #sidebar {
+        display: none;
+    }
+  }
+
+  @media (max-width: 750px) {
+    #blog-post-form {
+        display: none;
+    }
+  }
+
+  @media (min-width: 750px) {
+    em {
+        display: none;
+    }
+  }

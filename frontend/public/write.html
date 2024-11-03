@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>Product Name</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+ </head>
+  <body>
+    <div id="container">
+     <div id="sidebar">
+       <div>
+         <div> <!--hacer el commit-->
+          <h1>Tabla de Contenidos</h1>
+         </div>
+         <div>
+            <ul>
+               <li>Blog</li>
+               <li>Declaración</li>
+               <li>Nuestras Referencias</li>
+            </ul>
+         </div>
+       </div>
+     </div>
+     <div id="main">
+      <div class="cabecera">
+        <div>The 42 Blog</div>
+        <div>
+          <ul>
+            <div>Youtube</div>
+            <div>Twitter</div>
+            <div>Github</div>
+          </ul>
+        </div>
+      </div>
+      <div class="contenido">
+        <div>
+            <img src="assets/images/static/GIF ANIMADOS___.gif" alt="braincook" width="250px">
+        </div>
+         <div class="card">
+                <form id="blog-post-form" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="post-title">Title:</label>
+                        <input type="text" id="post-title" name="title" required>
+                    </div>
+        
+                    <div class="col">
+                        <textarea id="textarea" placeholder="No gastes tinta 🪶"></textarea>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="post-image">Images:</label>
+                        <input type="file" id="post-image" name="images" accept="image/*" multiple>
+                        <div id="image-preview"></div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="post-video">Video:</label>
+                        <input type="file" id="post-video" name="video" accept="video/*">
+                        <div id="video-preview"></div>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="post-audio">Audio:</label>
+                        <input type="file" id="post-audio" name="audio" accept="audio/*">
+                        <div id="audio-preview"></div>
+                    </div>
+        
+                    <button type="submit">Publish Post</button>
+                </form>
+         </div>
+      </div>
+      <div class="footer">
+         Footer
+      </div>
+     </div>
+    </div>
+  </body>
+</html>

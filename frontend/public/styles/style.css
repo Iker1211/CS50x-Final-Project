@@ -54,13 +54,9 @@ body {
     background-color: yellow;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 70%;
-}
-
-textarea {
-    flex: 0 0 auto;
-    width: 300px;
-    height: 300px;
+    flex: none;
 }
 
 .footer {
@@ -68,4 +64,34 @@ textarea {
     display: flex;
     justify-content: center;
     height: 10%;
+}
+
+/*Wtite*/
+
+.card {
+width: 65%;
+z-index: 99999;
+}
+
+#blog-post-form {
+width: 100%;
+}
+
+.col 
+{
+  background-color: #fff;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: #00000059 0px 5px 15px;
+}
+
+textarea
+{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    resize: none;
 }
